@@ -113,7 +113,7 @@ def apply_reflexion(
     reflection_context = build_context(prev_code, failures)
     print(f"反思上下文: {reflection_context}, {reflexion_prompt}")
     response = chat(
-        model="llama3.1:8b",
+        model="test-model",
         messages=[
             {"role": "system", "content": reflexion_prompt},
             {"role": "user", "content": reflection_context},

@@ -58,7 +58,7 @@ def test_your_prompt(system_prompt: str) -> bool:
     for idx in range(NUM_RUNS_TIMES):
         print(f"正在运行第 {idx + 1} 次测试，共 {NUM_RUNS_TIMES} 次")
         response = chat(
-            model="kimi-k2.5", # Ensure we use a capable model
+            model="test-model", # Ensure we use a capable model
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": USER_PROMPT},
